@@ -1,0 +1,62 @@
+⸢′⸣ is a string.
+⸢☼⸣ is a string.
+⸢◆⸣ is a string.
+⸢¬⸣ is a string.
+⸢→⸣ is a string.
+⸢∀⸣ is a string.
+⸢▒⸣ is a string.
+If A is a string and B is a string, then ⸢AB⸣ is a string.
+
+⸢′⸣ is a counter.
+If A is a counter, then ⸢A′⸣ is a counter.
+⸢☼⸣ is an arity.
+If A is an arity, then ⸢A☼⸣ is an arity.
+If A is a counter, then ⸢◆A⸣ is an atomic proposition.
+If A is a counter, then ⸢◆◆A⸣ is an individual.
+If A is a counter and B is an arity, then ⸢◆◆◆AB⸣ is a function.
+If A is a counter and B is an arity, then ⸢◆◆◆◆AB⸣ is a predicate.
+
+If A is an individual, then A is a term.
+If A is a counter and B is a term, then ⸢◆◆◆A☼B⸣ is a term.
+If A is a counter and B is an arity and C is an input and D is a term and ⸢◆◆◆ABC⸣ is a term, then ⸢◆◆◆AB☼CD⸣ is a term.
+If A is a term, then A is an input.
+If A is an input and B is an input, then ⸢AB⸣ is an input.
+
+If A is an atomic proposition, then A is a wff.
+If A is a counter and B is a term, then ⸢◆◆◆◆A☼B⸣ is a wff.
+If A is a counter and B is an arity and C is an input and D is a term and ⸢◆◆◆◆ABC⸣ is a wff, then ⸢◆◆◆◆AB☼CD⸣ is a wff.
+If A is a wff, then ⸢¬A⸣ is a wff.
+If A is a wff and B is a wff, then ⸢→AB⸣ is a wff.
+If A is an individual and B is a wff, then ⸢∀AB⸣ is a wff.
+
+If A is an individual and B is a counter, then ⸢A▒AB⸣ is a proviso.
+If A is an individual and B is a counter, then ⸢AB▒A⸣ is a proviso.
+If A is an individual and B is an atomic proposition, then ⸢A▒B⸣ is a proviso.
+If A is an individual and B is a function, then ⸢A▒B⸣ is a proviso.
+If A is an individual and B is a predicate, then ⸢A▒B⸣ is a proviso.
+If A is an individual, then ⸢A▒¬⸣ is a proviso.
+If A is an individual, then ⸢A▒→⸣ is a proviso.
+If A is an individual, then ⸢A▒∀⸣ is a proviso.
+If A is an individual and B is a string and C is a string and ⸢A▒B⸣ is a proviso and ⸢A▒C⸣ is a proviso, then ⸢A▒BC⸣ is a proviso.
+If A is a proviso, then A is a proviso group.
+If A is a proviso group and B is a proviso group, then ⸢A▒B⸣ is a proviso group.
+
+If A is a wff and B is a wff and C is a wff and D is a wff and E is a wff, then ⸢→→→→→AB→¬C¬DCE→→EA→DA⸣ is a theorem.
+If A is a wff and B is a wff and A is a theorem and ⸢→AB⸣ is a theorem, then B is a theorem.
+
+If A is an individual and B is a wff and C is a wff, then ⸢→∀A→BC→∀AB∀AC⸣ is a theorem.
+If A is an individual and B is a wff and ⸢A▒B⸣ is a proviso, then ⸢→B∀AB⸣ is a theorem.
+If A is an individual and B is a wff and B is a theorem, then ⸢∀AB⸣ is a theorem.
+
+If A is an individual and B is a term, then ⸢¬∀A¬◆◆◆◆′☼☼AB⸣ is a theorem.
+If A is a term and B is a term and C is a term, then ⸢→◆◆◆◆′☼☼AB→◆◆◆◆′☼☼AC◆◆◆◆′☼☼BC⸣ is a theorem.
+
+If A is a term and B is a term and C is a term, then ⸢→◆◆◆◆′☼☼AB→◆◆◆◆′′☼☼AC◆◆◆◆′′☼☼BC⸣ is a theorem.
+If A is a term and B is a term and C is a term, then ⸢→◆◆◆◆′☼☼AB→◆◆◆◆′′☼☼CA◆◆◆◆′′☼☼CB⸣ is a theorem.
+If A is an individual and B is a term and C is a term and ⸢A▒B▒A▒C⸣ is a proviso group, then ⸢→∀A¬→→◆◆◆◆′′☼☼AB◆◆◆◆′′☼☼AC¬→◆◆◆◆′′☼☼AC◆◆◆◆′′☼☼AB◆◆◆◆′☼☼BC⸣ is a theorem.
+If A is an individual and B is an individual and C is an individual and ⸢A▒B▒A▒C▒B▒C⸣ is a proviso group, then ⸢¬∀A¬→¬∀B¬∀C→D◆◆◆◆′☼☼CB∀C¬→→◆◆◆◆′′☼☼CA¬∀A¬¬→◆◆◆◆′′☼☼AB¬∀BD¬→¬∀A¬¬→◆◆◆◆′′☼☼AB¬∀BD◆◆◆◆′′☼☼CA⸣ is a theorem.
+If A is an individual and B is an individual and C is an individual and ⸢A▒B▒A▒C▒B▒C⸣ is a proviso group, then ⸢¬∀A¬∀B→∀A→◆◆◆◆′′☼☼AB◆◆◆◆′′☼☼AC◆◆◆◆′′☼☼BA⸣ is a theorem.
+If A is an individual and B is a term and C is an individual and ⸢A▒B▒A▒C▒C▒B⸣ is a proviso group, then ⸢→◆◆◆◆′′☼☼AB¬∀A¬¬→◆◆◆◆′′☼☼AB¬∀C→◆◆◆◆′′☼☼CA¬◆◆◆◆′′☼☼CB⸣ is a theorem.
+If A is an individual and B is an individual and C is an individual and ⸢A▒B▒A▒C▒B▒C⸣ is a proviso group, then ⸢¬∀A¬¬→◆◆◆◆′′☼☼BA¬∀B→◆◆◆◆′′☼☼BA¬∀C¬¬→◆◆◆◆′′☼☼BC¬◆◆◆◆′′☼☼CA⸣ is a theorem.
+
+If A is an individual and B is an individual and C is an individual and D is an individual and ⸢A▒B▒A▒C▒A▒D▒B▒C▒B▒D▒C▒D⸣ is a proviso group, then ⸢¬∀A¬∀B∀C→¬→◆◆◆◆′′☼☼BC¬◆◆◆◆′′☼☼CD¬∀D¬∀B¬→→¬∀D¬¬→¬→◆◆◆◆′′☼☼BC¬◆◆◆◆′′☼☼CD¬¬→◆◆◆◆′′☼☼BD¬◆◆◆◆′′☼☼DA◆◆◆◆′☼☼BD¬→◆◆◆◆′☼☼BD¬∀D¬¬→¬→◆◆◆◆′′☼☼BC¬◆◆◆◆′′☼☼CD¬¬→◆◆◆◆′′☼☼BD¬◆◆◆◆′′☼☼DA⸣ is a theorem.

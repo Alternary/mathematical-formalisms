@@ -95,12 +95,13 @@ def main():
         restart()
     
     try:
-        hypotheses = copy.deepcopy(theorems[infex])
+        schema = copy.deepcopy(theorems[infex])
     except (IndexError):
         print("Index out of range!")
         restart()
     
-    conjecture = hypotheses.pop()
+    conjecture = schema.pop()
+    hypotheses = schema
     
     for index in range(len(hypotheses)):
         hypothesis = hypotheses[index]

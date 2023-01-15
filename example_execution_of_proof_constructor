@@ -1,0 +1,90 @@
+If you wish to list strings, type s
+If you wish to list counters, type c
+If you wish to list individuals, type i
+If you wish to list wffs, type w
+If you wish to list provisos, type p
+If you wish to list proviso groups, type g
+If you wish to list theorems, type t
+If you wish to list all theorems, type a
+If you wish to construct a theorem, type the index of an inference rule you wish to instantiate.10
+Type the index of the theorem you wish to unify with the hypothesis ['c', 'A'] .
+9
+The unification has succeeded and the theorem ['c', '′′'] has been proven.
+Its index is 42 .
+
+If you wish to list strings, type s
+If you wish to list counters, type c
+If you wish to list individuals, type i
+If you wish to list wffs, type w
+If you wish to list provisos, type p
+If you wish to list proviso groups, type g
+If you wish to list theorems, type t
+If you wish to list all theorems, type a
+If you wish to construct a theorem, type the index of an inference rule you wish to instantiate.11
+Type the index of the theorem you wish to unify with the hypothesis ['c', 'A'] .
+42
+The unification has succeeded and the theorem ['i', '𝕴′′'] has been proven.
+Its index is 43 .
+
+If you wish to list strings, type s
+If you wish to list counters, type c
+If you wish to list individuals, type i
+If you wish to list wffs, type w
+If you wish to list provisos, type p
+If you wish to list proviso groups, type g
+If you wish to list theorems, type t
+If you wish to list all theorems, type a
+If you wish to construct a theorem, type the index of an inference rule you wish to instantiate.a
+0 : [['s', '′']]
+1 : [['s', '𝕴']]
+2 : [['s', '＝']]
+3 : [['s', '∈']]
+4 : [['s', '¬']]
+5 : [['s', '→']]
+6 : [['s', '∀']]
+7 : [['s', '▒']]
+8 : [['s', 'A'], ['s', 'B'], ['s', 'AB']]
+9 : [['c', '′']]
+10 : [['c', 'A'], ['c', 'A′']]
+11 : [['c', 'A'], ['i', '𝕴A']]
+12 : [['i', 'A'], ['w', 'B'], ['w', '＝AB']]
+13 : [['i', 'A'], ['w', 'B'], ['w', '∈AB']]
+14 : [['w', 'A'], ['w', '¬A']]
+15 : [['w', 'A'], ['w', 'B'], ['w', '→AB']]
+16 : [['i', 'A'], ['w', 'B'], ['w', '∀AB']]
+17 : [['i', 'A'], ['c', 'B'], ['p', 'A▒AB']]
+18 : [['i', 'A'], ['c', 'B'], ['p', 'AB▒A']]
+19 : [['i', 'A'], ['p', 'A▒＝']]
+20 : [['i', 'A'], ['p', 'A▒∈']]
+21 : [['i', 'A'], ['p', 'A▒¬']]
+22 : [['i', 'A'], ['p', 'A▒→']]
+23 : [['i', 'A'], ['p', 'A▒∀']]
+24 : [['i', 'A'], ['s', 'B'], ['s', 'C'], ['p', 'A▒B'], ['p', 'A▒C'], ['p', 'A▒BC']]
+25 : [['p', 'A'], ['g', 'A']]
+26 : [['g', 'A'], ['g', 'B'], ['g', 'A▒B']]
+27 : [['w', 'A'], ['w', 'B'], ['w', 'C'], ['w', 'D'], ['w', 'E'], ['t', '→→→→→AB→¬C¬DCE→→EA→DA']]
+28 : [['w', 'A'], ['w', 'B'], ['t', 'A'], ['t', '→AB'], ['t', 'B']]
+29 : [['i', 'A'], ['w', 'B'], ['w', 'C'], ['t', '→∀A→BC→∀AB∀AC']]
+30 : [['i', 'A'], ['w', 'B'], ['p', 'A▒B'], ['t', '→B∀AB']]
+31 : [['i', 'A'], ['w', 'B'], ['t', '∀AB']]
+32 : [['i', 'A'], ['i', 'B'], ['t', '¬∀A¬＝AB']]
+33 : [['i', 'A'], ['i', 'B'], ['i', 'C'], ['t', '→＝AB→＝AC＝BC']]
+34 : [['i', 'A'], ['i', 'B'], ['i', 'C'], ['t', '→＝AB→∈AC∈BC']]
+35 : [['i', 'A'], ['i', 'B'], ['i', 'C'], ['t', '→＝AB→∈CA∈CB']]
+36 : [['i', 'A'], ['i', 'B'], ['i', 'C'], ['g', 'A▒B▒A▒C'], ['t', '→∀A¬→→∈AB∈AC¬→∈AC∈AB＝BC']]
+37 : [['i', 'A'], ['i', 'B'], ['i', 'C'], ['g', 'A▒B▒A▒C▒B▒C'], ['t', '¬∀A¬→¬∀B¬∀C→D＝CB∀C¬→→∈CA¬∀A¬¬→∈AB¬∀BD¬→¬∀A¬¬→∈AB¬∀BD∈CA']]
+38 : [['i', 'A'], ['i', 'B'], ['i', 'C'], ['g', 'A▒B▒A▒C▒B▒C'], ['t', '¬∀A¬∀B→∀A→∈AB∈AC∈BA']]
+39 : [['i', 'A'], ['i', 'B'], ['i', 'C'], ['g', 'A▒B▒A▒C▒C▒B'], ['t', '→∈AB¬∀A¬¬→∈AB¬∀C→∈CA¬∈CB']]
+40 : [['i', 'A'], ['i', 'B'], ['i', 'C'], ['g', 'A▒B▒A▒C▒B▒C'], ['t', '¬∀A¬¬→∈BA¬∀B→∈BA¬∀C¬¬→∈BC¬∈CA']]
+41 : [['i', 'A'], ['i', 'B'], ['i', 'C'], ['i', 'D'], ['g', 'A▒B▒A▒C▒A▒D▒B▒C▒B▒D▒C▒D'], ['t', '¬∀A¬∀B∀C→¬→∈BC¬∈CD¬∀D¬∀B¬→→¬∀D¬¬→¬→∈BC¬∈CD¬¬→∈BD¬∈DA＝BD¬→＝BD¬∀D¬¬→¬→∈BC¬∈CD¬¬→∈BD¬∈DA']]
+42 : [['c', '′′']]
+43 : [['i', '𝕴′′']]
+If you wish to list strings, type s
+If you wish to list counters, type c
+If you wish to list individuals, type i
+If you wish to list wffs, type w
+If you wish to list provisos, type p
+If you wish to list proviso groups, type g
+If you wish to list theorems, type t
+If you wish to list all theorems, type a
+If you wish to construct a theorem, type the index of an inference rule you wish to instantiate.
